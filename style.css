@@ -1,0 +1,190 @@
+/* importing font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    /* Neutrals */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+/* hsl(259, 100%, 65%) */
+body{
+    background-color: var(--Light-grey);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+main{
+    display: flex;
+}
+
+main .card{
+    margin-top: 7.5rem;
+    height: 34rem;
+    background-color: var(--Off-white);
+    max-width: 42rem;
+    /* max-width: 40%; */
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+
+     
+}
+main .card-upper .box{
+    margin-right: 1.6rem;
+}
+main .card-upper .line_with_btn{
+    display: flex;
+    align-items: center;
+    height: 0;
+
+
+}
+main .card-upper .line_with_btn button{
+    background-color: var(--primary-color);
+    border: none;
+    width: 5rem;
+    border-radius: 50%;
+    height: 5rem;
+}
+main .card-upper .line_with_btn button img{
+    width: 30%;
+    width: 100%;
+    transform: rotate(90deg);
+}
+main .card-upper hr{
+    height: 1px;
+    width: 79%;
+    background-color: var(--Light-grey);
+    margin-left: 1.8rem;
+    border: none;
+}
+
+
+main .card-upper .box_container{
+    display: flex;
+    height: 11rem;
+    align-content: center;
+    padding:  2rem 1.8rem;
+}
+main .card-upper .box_container h5{
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+main .card-upper .box_container input{
+    height: 3.7rem;
+    padding: 1rem 1.1rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+main .card .card-lower {
+    padding-top: 2.4rem;
+    padding-left: 1rem;
+}
+main .card .card-lower .info{
+    display: flex;
+    /* background-color: rebeccapurple; */
+    font-size: 5rem;
+    align-items: center;
+    font-weight: 550;
+    height: 5.7rem;
+    font-style: italic;
+}
+main .card .card-lower span{
+    color: var(--primary-color);
+}
+main .card .card-lower .info input{
+    border: none;
+    font-size: 6rem;
+    width: 20%;
+    /* background-color: brown; */
+    text-align: center;
+    margin-right: 0.375rem;
+    padding-bottom: 1rem;
+    background: none;
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Starting media queries */
+@media (max-width:785px) {
+    main .card{
+        max-width: 90vw;
+        margin: auto;
+    }
+    main .card-upper .box_container{
+        padding: 2rem 0rem;
+    }
+    main .card-upper .box{
+        margin-right: 1.5rem;
+    }
+    main .card-upper .box_container input{
+        width: 6.5rem;
+        font-size: 1.2rem;
+    }
+    main .card .card-lower .info{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width:585px) {
+    main .card{
+        max-width: 27rem;
+    }
+    main .card-upper .box_container{
+        padding: 2rem 0rem;
+    }
+    main .card-upper .box{
+        margin-right: 1rem;
+    }
+    main .card-upper .box_container input{
+        width: 6.5rem;
+        font-size: 1rem;
+    }
+    main .card .card-lower .info{
+        font-size: 3.5rem;
+    }
+}
+
+
+
+
+@media (max-width:375px) {
+    main .card{
+        max-width: 22rem;
+    }
+    main .card-upper .box_container{
+        padding: 2rem 0rem;
+    }
+    main .card-upper .box_container input{
+        width: 6rem;
+        font-size: 1rem;
+    }
+    main .card .card-lower .info{
+        font-size: 3rem;
+    }
+}
+
+
+
